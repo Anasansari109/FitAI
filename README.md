@@ -1,156 +1,176 @@
-# 🏋️ FitAI - AI Powered Fitness & Wellness Platform
+# FitAI – AI-Powered Fitness & Wellness Platform
 
-FitAI is a Full Stack AI-powered fitness platform built using the MERN Stack. It generates personalized workout plans, diet recommendations, and exercise guidance based on each user's fitness goals, lifestyle, and preferences.
+**FitAI** is a full-stack AI-powered fitness and wellness platform built using the MERN stack. It helps users create personalized workout plans, get diet recommendations, explore exercises, and track their fitness progress based on their individual goals, lifestyle, and preferences.
 
----
-
-# 🚀 Features
-
-- 🔐 Secure User Authentication
-- 🤖 AI Generated Workout Plans
-- 🥗 AI Diet Recommendation
-- 💪 Personalized Exercise Recommendation
-- 🔥 107+ Exercise Library with GIF Demonstrations
-- 📊 Progress Tracking
-- 📅 Daily Workout Planner
-- 💧 Water Intake Tracking
-- 📈 Fitness Analytics
-- 🏠 Home & Gym Workout Support
-- ⚡ Responsive User Interface
+The platform combines **Google Gemini AI with rule-based recommendation algorithms** to deliver personalized fitness recommendations.
 
 ---
 
-# 🤖 AI Features
+## 🚀 Key Features
 
-FitAI uses Google's Gemini AI to personalize fitness recommendations.
+### 🔐 Authentication & User Experience
+- Secure user authentication
+- Responsive user interface
+- Personalized fitness experience
 
-The AI considers:
+### 🤖 AI-Powered Personalization
+- AI-generated workout plans
+- Personalized diet recommendations
+- Exercise recommendations based on user preferences
+- Fitness recommendations tailored to individual goals and lifestyle
 
-- Fitness Goal
-- Experience Level
-- Workout Days
-- Workout Duration
-- Available Equipment
-- Food Preference
-- Budget
-- Lifestyle
-- Medical Conditions
+### 🏋️ Exercise Library
+- 107+ exercises with animated GIF demonstrations
+- Exercise categories and muscle group information
+- Equipment and difficulty-level details
+- Instructions, tips, and common mistakes
+- Alternative exercise recommendations
 
-The generated response is combined with rule-based workout and diet templates to create a personalized fitness plan.
-
----
-
-# 🏋️ Exercise Library
-
-The application includes over **107 exercises**.
-
-Each exercise contains:
-
-- Exercise Name
-- Category
-- Primary Muscles
-- Secondary Muscles
-- Equipment
-- Difficulty Level
-- Instructions
-- Tips
-- Common Mistakes
-- Alternatives
-- Animated GIF Demonstration
+### 📊 Fitness Tracking & Planning
+- Daily workout planner
+- Fitness progress tracking
+- Fitness analytics
+- Water intake tracking
+- Home and gym workout support
 
 ---
 
-# 🥗 Diet Recommendation
+## 🧠 AI & Recommendation System
 
-FitAI recommends diet plans based on:
+FitAI integrates **Google Gemini AI** to generate personalized fitness recommendations.
 
+The recommendation process considers multiple user-specific factors:
+
+| Category | Personalization Factors |
+|---|---|
+| Fitness Goals | Weight gain, weight loss, muscle gain, fat loss |
+| Experience | User's fitness experience level |
+| Workout Preferences | Workout days and duration |
+| Equipment | Available gym or home workout equipment |
+| Nutrition | Vegetarian or non-vegetarian food preferences |
+| Budget & Lifestyle | Food budget and lifestyle |
+| Health Context | User-provided medical conditions |
+
+### Hybrid Recommendation Approach
+
+FitAI combines AI-generated responses with structured, rule-based workout and diet templates.
+
+This approach includes:
+- Workout recommendation algorithm
+- Diet recommendation algorithm
+- Rule-based template selection
+- AI response parsing
+- Exercise filtering and matching
+
+The combination helps organize personalized recommendations around the user's fitness requirements and preferences.
+
+---
+
+## 🥗 Personalized Diet Recommendations
+
+FitAI provides diet recommendations based on different fitness goals and food preferences.
+
+**Supported fitness goals:**
 - Weight Gain
 - Weight Loss
 - Muscle Gain
 - Fat Loss
-- Vegetarian
-- Non Vegetarian
-- Hostel Students
-- Home Cooked Meals
-- Budget Friendly Foods
+
+**Food and lifestyle preferences:**
+- Vegetarian and non-vegetarian diets
+- Hostel-friendly food options
+- Home-cooked meals
+- Budget-friendly food recommendations
 
 ---
 
-# 🧠 Algorithms Used
+## 💪 Exercise Library
 
-The project includes several rule-based algorithms before AI optimization:
+The platform includes a collection of **107+ exercises**, with information designed to help users understand and perform different exercises.
 
-- Workout Recommendation Algorithm
-- Diet Recommendation Algorithm
-- Exercise Filtering
-- Exercise Matching Algorithm
-- Progress Tracking Logic
-- AI Response Parsing
-- Rule-based Template Selection
+Each exercise includes:
+
+- Exercise name and category
+- Primary and secondary muscles
+- Required equipment
+- Difficulty level
+- Exercise instructions
+- Helpful tips
+- Common mistakes
+- Alternative exercises
+- Animated GIF demonstration
 
 ---
 
-# 💻 Tech Stack
+## 💻 Technology Stack
 
-## Frontend
-
+### Frontend
 - React.js
 - Vite
 - Tailwind CSS
 - Redux Toolkit
 
-## Backend
-
+### Backend
 - Node.js
 - Express.js
 
-## Database
-
+### Database
 - MongoDB
 - Mongoose
 
-## AI
-
+### AI Integration
 - Google Gemini API
 
 ---
 
-# 📁 Project Structure
+## 🏗️ Project Structure
 
-```
-FitAI
+```text
+FitAI/
 │
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── services
-│   ├── middleware
-│   ├── prompts
-│   └── shared
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── middleware/
+│   ├── prompts/
+│   └── shared/
 │
-├── frontend
-│   ├── public
-│   ├── src
-│   ├── components
-│   ├── pages
-│   ├── redux
-│   └── shared
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   └── shared/
 │
-└── scripts
+└── scripts/
 ```
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Getting Started
 
-Clone the repository
+Follow these steps to run FitAI locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+- MongoDB
+- Google Gemini API access
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Anasansari109/FitAI.git
+cd FitAI
 ```
 
-Backend
+### 2. Set Up the Backend
 
 ```bash
 cd backend
@@ -158,7 +178,9 @@ npm install
 npm run dev
 ```
 
-Frontend
+### 3. Set Up the Frontend
+
+Open a new terminal:
 
 ```bash
 cd frontend
@@ -166,9 +188,13 @@ npm install
 npm run dev
 ```
 
+**Note:** Configure the required environment variables for the backend, including database and Gemini API configuration, before running the application. Refer to the project's backend configuration for the exact variable names.
+
 ---
 
-# 🔮 Future Improvements
+## 🔮 Future Improvements
+
+Potential enhancements planned for future versions:
 
 - AI Coach Chatbot
 - Meal Image Recognition
@@ -180,20 +206,24 @@ npm run dev
 
 ---
 
-# 👨‍💻 Developer
+## 👨‍💻 Developer
 
 **Mohd Anas Ansari**
 
-B.Tech Computer Engineering
-
+B.Tech – Computer Engineering  
 Jamia Millia Islamia
 
-Full Stack Developer
+**Full-Stack Developer**
 
-Java • JavaScript • React • Node.js • Express • MongoDB • AI
+Java • JavaScript • React.js • Node.js • Express.js • MongoDB • Google Gemini AI
+
+- GitHub: [Anasansari109](https://github.com/Anasansari109)
+- Project Repository: [FitAI](https://github.com/Anasansari109/FitAI)
 
 ---
 
-# ⭐ If you like this project
+## ⭐ Support
 
-Please consider giving this repository a ⭐ on GitHub.
+If you find this project interesting, consider giving the repository a ⭐ on GitHub.
+
+Your support is appreciated!
